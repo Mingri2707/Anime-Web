@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
+import "./test.css";
 export const Menu = ({ title, items }) => {
   return (
     <div className="relative group">
@@ -15,7 +15,7 @@ export const Menu = ({ title, items }) => {
         />
       </a>
 
-      <div className="absolute left-0 top-full min-w-[400px] bg-white scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-200 text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-400 z-50">
+      <div className="menu absolute left-0 top-full h-auto min-w-[400px] max-h-[200px] bg-white scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-200 text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-400 z-50 overflow-y-auto">
         <div className="h-[2px] w-full bg-lime-500 rounded-none"></div>
         <div className="grid grid-cols-3 gap-4 px-6 py-4">
           {items.map((item, idx) => (

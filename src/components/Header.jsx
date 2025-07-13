@@ -66,7 +66,7 @@ const categoryAnime = [
 ];
 function Header() {
   return (
-    <div className="p-4 bg-black flex items-center justify-center w-full h-[70px] sticky top-0">
+    <div className="p-4 bg-black flex items-center justify-center w-full h-[70px] sticky top-0 z-50">
       {/* Header */}
       <div className="flex items-center space-x-4">
         {/* logo */}
@@ -102,7 +102,7 @@ function Header() {
             focus:placeholder:text-white focus:outline-none"
               placeholder="Tìm: tên tiếng nhật, anh, việt"
             />
-            <button className="p-2 bg-red-700 text-white w-[100px] rounded text-[13px]">
+            <button className="p-2 bg-red-700 text-white w-[100px] rounded text-[13px] hover:bg-gray-600">
               Tìm Kiếm
             </button>
           </div>
